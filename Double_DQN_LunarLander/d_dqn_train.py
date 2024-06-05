@@ -174,6 +174,7 @@ class DQN:
         q_out = self.q(observations)
         q_values = q_out.gather(dim=-1, index=actions)
 
+        # 수정사항 : 계산식 변경
         with torch.no_grad():
             q_prime_out = self.target_q(next_observations)
             # next_state_values.shape: torch.Size([32, 1])
