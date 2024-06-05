@@ -36,6 +36,7 @@ Spring Semester, 2024
 추가적으로, 과제와 강의에 대한 정보는 아래 링크를 통해 확인할 수 있습니다:
 
 - [강의 홈페이지](http://link.koreatech.ac.kr/lecture/2024/advanced_ai)
+- [Homework 1](https://www.dropbox.com/scl/fi/iyat052w8oous1p148f9g/HW_1.pdf?rlkey=qggwkbwvkz7ihbutnk247nvrq&e=1&dl=0)
 - [Homework 2](https://www.dropbox.com/scl/fi/wdas1lo3l3bsx1hhp2x6z/HW_2.pdf?rlkey=8atvaerw5mydoitb4a34x5mne&e=1&dl=0)
 
 ---
