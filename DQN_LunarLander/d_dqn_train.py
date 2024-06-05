@@ -28,7 +28,7 @@ class DQN:
         if self.use_wandb:
             self.wandb = wandb.init(
                 project="DQN_{0}".format(self.env_name),
-                name=self.current_time,
+                name="Double DQN",
                 config=config
             )
 
