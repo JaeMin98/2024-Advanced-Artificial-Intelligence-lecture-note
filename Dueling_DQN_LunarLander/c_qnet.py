@@ -28,7 +28,7 @@ class QNet(nn.Module):
         self.n_features = n_features
         self.n_actions = n_actions
 
-        # 기존 DQN과 달리, Dueling DQN을 위해 두 개의 스트림을 추가합니다.
+        # 기존 DQN과 달리, Dueling DQN을 위해 두 개의 스트림을 추가
         self.fc1 = nn.Linear(n_features, 128)
         self.fc2 = nn.Linear(128, 128)
 
@@ -39,11 +39,11 @@ class QNet(nn.Module):
         x = F.relu(self.fc1(x))
         x = F.relu(self.fc2(x))
 
-        # Dueling DQN: Value와 Advantage를 계산하여 Q 값을 구합니다.
+        # Dueling DQN: Value와 Advantage를 계산하여 Q 값을 산정
         value = self.value_stream(x)
         advantage = self.advantage_stream(x)
 
-        # 여기서 Dueling DQN의 수식을 반영합니다.
+        # Dueling DQN의 수식을 반영
         q_values = value + (advantage - advantage.mean(dim=1, keepdim=True))
         return q_values
 

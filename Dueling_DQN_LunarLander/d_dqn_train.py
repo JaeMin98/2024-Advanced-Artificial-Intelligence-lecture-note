@@ -194,7 +194,7 @@ class DQN:
 
         copyfile(
             src=os.path.join(MODEL_DIR, filename),
-            dst=os.path.join(MODEL_DIR, "dqn_{0}_latest.pth".format(self.env_name))
+            dst=os.path.join(MODEL_DIR, "dqn_LunarLander-v2_203.6_2024-06-06_02-11-46.pth".format(self.env_name))
         )
 
     def validate(self):

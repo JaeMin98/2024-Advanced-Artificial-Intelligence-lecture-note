@@ -4,7 +4,7 @@ import subprocess
 scripts_and_dirs = [
     (os.path.join('DQN_LunarLander','d_dqn_train.py'), os.path.join('DQN_LunarLander')),
     (os.path.join('Double_DQN_LunarLander','d_dqn_train.py'), os.path.join('Double_DQN_LunarLander')),
-    (os.path.join('DQN_LunarLander','d_dqn_train.py'), os.path.join('DQN_LunarLander')),
+    (os.path.join('Dueluing_DQN_LunarLander','d_dqn_train.py'), os.path.join('Dueluing_DQN_LunarLander')),
 ]
 
 # 상대 경로를 절대 경로로 변환
